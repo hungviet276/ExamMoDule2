@@ -4,14 +4,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Menu {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         //Tao arrayList luu thong tin
         ArrayList<Student> listStudent = new ArrayList<>();
         FileManagement fileManagement = new FileManagement();
 
-        MenuMain.displayMenu();
+        DisplayMenu.displayMenu();
 
         StudentManager studentManager = new StudentManager();
         while (true) {

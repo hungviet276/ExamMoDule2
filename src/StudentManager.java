@@ -16,7 +16,7 @@ public class StudentManager {
             System.out.println("--------------------------------------");
             String line = sc.nextLine();
         }
-        MenuMain.displayMenu();
+        DisplayMenu.displayMenu();
     }
 
     public void addStudent(ArrayList<Student> arrayList) {
@@ -46,7 +46,7 @@ public class StudentManager {
             System.out.println(result);
             this.addStudent(arrayList);
         }
-        MenuMain.displayMenu();
+        DisplayMenu.displayMenu();
 
     }
 
@@ -93,7 +93,7 @@ public class StudentManager {
             } else {
                 System.out.println(result);
             }
-            MenuMain.displayMenu();
+            DisplayMenu.displayMenu();
 
 
         } else {
@@ -103,7 +103,7 @@ public class StudentManager {
             if (reCheckPhone != 0) {
                 this.editStudent(reCheckPhone, arrayList);
             } else {
-                MenuMain.displayMenu();
+                DisplayMenu.displayMenu();
             }
 
         }
@@ -117,7 +117,7 @@ public class StudentManager {
                 int index = checkPhone(phone, arrayList);
                 System.out.println("Xoa thanh cong");
                 arrayList.remove(index);
-            } else MenuMain.displayMenu();
+            } else DisplayMenu.displayMenu();
 
         } else {
             System.out.println("Không tìm được danh bạ với số điện thoại trên");
@@ -125,7 +125,7 @@ public class StudentManager {
             int rePhone = sc.nextInt();
             if (rePhone != 0) {
                 delete(rePhone, arrayList);
-            } else MenuMain.displayMenu();
+            } else DisplayMenu.displayMenu();
 
         }
 
@@ -186,7 +186,7 @@ public class StudentManager {
         System.out.println("--------------------------------------");
         String line = sc.nextLine();
 
-        MenuMain.displayMenu();
+        DisplayMenu.displayMenu();
     }
 
 }
